@@ -1,0 +1,21 @@
+{
+  "name": "sample-index-map-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c && node scripts/sourcemap.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-multi-entry": "^6.0.1",
+    "glob": "^11.0.0",
+    "rollup": "^4.18.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "source-map": "^0.7.4"
+  }
+}
