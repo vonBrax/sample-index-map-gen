@@ -6,5 +6,5 @@ to generate javascript bundle file that uses index source maps (aka sectioned ma
 # Instructions
 * Add or modifiy files inside the `webapp` folder
 * Run `npm run build`
-* The bundle file and its indexed sourcemap will be located at `dist/resources` (all other dist files can be ignored)
+* The bundle file will be located at `dist/bundle.js` along with its sourcemap file (all other files can be ignored)
 * Load the `bundle.js` file in a browser for testing

@@ -4,18 +4,24 @@ metadata:
 type: application
 
 builder:
+  customTasks:
+    - name: ui5-tooling-transpile-task
+      beforeTask: generateBundle
+      configuration:
+        transformTypeScript: false
+
   bundles:
     - bundleDefinition:
-        name: 'bundle.js'
+        name: 'sap/ui/demo/todo/bundle.js'
         defaultFileTypes:
           - '.js'
         sections:
           - mode: raw
             filters:
-              - '**/*'
+              - '**/*.js'
             resolve: true
             sort: true
       bundleOptions:
         optimize: true
-        usePredefineCalls: true
+        sourceMap: true
       
