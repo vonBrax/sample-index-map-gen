@@ -5,10 +5,10 @@ type: application
 
 builder:
   customTasks:
+    # See https://github.com/ui5-community/ui5-ecosystem-showcase/tree/main/packages/ui5-tooling-transpile
+    # for configuration options
     - name: ui5-tooling-transpile-task
       beforeTask: generateBundle
-      configuration:
-        transformTypeScript: false
 
   bundles:
     - bundleDefinition:
