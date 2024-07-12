@@ -1,0 +1,28 @@
+specVersion: '3.0'
+metadata:
+  name: openui5-sample-app
+type: application
+# framework:
+#   name: OpenUI5
+#   version: "1.125.0"
+# server:
+#   customMiddleware:
+#     - name: "@ui5/middleware-code-coverage"
+#       afterMiddleware: compression#
+
+builder:
+  bundles:
+    - bundleDefinition:
+        name: 'bundle.js'
+        defaultFileTypes:
+          - '.js'
+        sections:
+          - mode: raw
+            filters:
+              - '**/*'
+            resolve: true
+            sort: true
+      bundleOptions:
+        optimize: true
+        usePredefineCalls: true
+      
